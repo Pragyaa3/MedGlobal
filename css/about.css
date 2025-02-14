@@ -1,0 +1,79 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #3071a7;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  p {
+    line-height: 1.8;
+    color: #555;
+  }
+
+  a {
+    color: #3071a7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #055082;
+  }
+
+  .parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .parallax-1 {
+    background-image: url('your-image-url.jpg');
+    min-height: 400px;
+  }
+
+  .parallax-2 {
+    background-image: url('your-image-url-2.jpg');
+    min-height: 400px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .btn {
+    background: #3071a7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .btn:hover {
+    background: #055082;
+    transform: scale(1.05);
+  }
+
+  .navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .navbar.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
