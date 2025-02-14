@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applyNow</title>
+    <link rel="stylesheet" href="css/applyNow.css">
+</head>
+
+<body>
+    <form id="applyNowForm">
+        <button type="button" id="closeForm" class="close-btn">×</button> <!-- Cross button -->
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <select id="course" required>
+            <option value="">Select Course</option>
+            <option value="MBBS">MBBS</option>
+            <option value="Dentistry">Dentistry</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Pharmacy">Pharmacy</option>
+        </select>
+        <textarea id="message" placeholder="Message (Optional)"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="msg"></p>
+
+    <!-- Add Firebase CDN -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script type="module" src="js/submitForm.js"></script>
+
+    <script>
+        document.getElementById("closeForm").addEventListener("click", function () {
+            document.getElementById("applyNowForm").style.display = "none";
+
+            history.replaceState(null, null, '/');  // Replace the current page with the homepage
+
+            window.location.href = "index.html"
+        });
+
+    </script>
+
+</body>
+
+</html>

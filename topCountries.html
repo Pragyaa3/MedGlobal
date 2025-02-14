@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Countries by Various Metrics</title>
+    <link rel="stylesheet" href="css/countries.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MedGlobal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Top Countries
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Russia</a></li>
+                            <li><a class="dropdown-item" href="#">Uzbekistan</a></li>
+                            <li><a class="dropdown-item" href="#">Georgia</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="topCountries.html">See All</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- Sidebar Toggle Button -->
+                <button class="btn btn-outline-primary ms-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                    Toggle Sidebar
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle sidebar opening and closing smoothly
+        const sidebarToggle = document.getElementById("sidebar-toggle");
+        const sidebar = document.getElementById("sidebar");
+        const body = document.body;
+        const closeSidebarBtn = document.getElementById("close-sidebar");
+
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("sidebar-open");
+        });
+
+        closeSidebarBtn.addEventListener("click", () => {
+            sidebar.classList.remove("show");
+            body.classList.remove("sidebar-open");
+        });
+    </script>
+
+    <div class="container">
+        <h1>Top Countries by Various Metrics</h1>
+
+        <section class="description">
+            <p>Explore the opportunities in these countries for studying abroad, with a special focus on various
+                academic programs, including medical courses, with essential information like cost, climate, and
+                eligibility.</p>
+        </section>
+
+        <section class="country-section">
+            <h2>Study MBBS Abroad: Top Countries</h2>
+
+            <!-- Country 1: Russia -->
+            <div class="country">
+                <h3>Study MBBS in Russia</h3>
+                <p>Russia is a popular destination for Indian students due to its high-quality education and affordable
+                    MBBS programs. Russian universities offer MBBS in English, and several institutions are recognized
+                    globally for their medical programs. The cost of studying in Russia is affordable, with tuition fees
+                    ranging from INR 2 to 8 Lakhs annually, and the duration of the MBBS program is 6 years, including a
+                    1-year internship.</p>
+                <table>
+                    <tr>
+                        <td>Program</td>
+                        <td>MBBS</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>6 years (5+1)</td>
+                    </tr>
+                    <tr>
+                        <td>Intake</td>
+                        <td>Sept-Oct</td>
+                    </tr>
+                    <tr>
+                        <td>Eligibility</td>
+                        <td>50% in 12th board exam</td>
+                    </tr>
+                    <tr>
+                        <td>NEET</td>
+                        <td>Mandatory</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>INR 4 Lakhs/annum</td>
+                    </tr>
+                    <tr>
+                        <td>Living Cost</td>
+                        <td>USD 400/month</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Country 2: Uzbekistan -->
+            <div class="country">
+                <h3>Study MBBS in Uzbekistan</h3>
+                <p>Uzbekistan is emerging as an attractive destination for medical aspirants due to affordable tuition
+                    fees and internationally recognized medical schools. The country offers MBBS programs in English,
+                    and students can complete their studies at a fraction of the cost compared to other countries. The
+                    course lasts for 6 years, and students can avail themselves of various scholarships to ease the
+                    financial burden.</p>
+                <table>
+                    <tr>
+                        <td>Program</td>
+                        <td>MBBS</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>6 years</td>
+                    </tr>
+                    <tr>
+                        <td>Intake</td>
+                        <td>Sept-Oct</td>
+                    </tr>
+                    <tr>
+                        <td>Eligibility</td>
+                        <td>50% in 12th board exam</td>
+                    </tr>
+                    <tr>
+                        <td>NEET</td>
+                        <td>Mandatory</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>INR 3 Lakhs/annum</td>
+                    </tr>
+                    <tr>
+                        <td>Living Cost</td>
+                        <td>USD 300/month</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Country 3: Kazakhstan -->
+            <div class="country">
+                <h3>Study MBBS in Kazakhstan</h3>
+                <p>Kazakhstan offers a globally recognized MBBS program with an English-medium curriculum. Known for its
+                    medical excellence, Kazakhstan offers affordable fees, quality education, and an enriching cultural
+                    experience for Indian students. The course duration is 6 years, with several institutions providing
+                    the option to apply for scholarships.</p>
+                <table>
+                    <tr>
+                        <td>Program</td>
+                        <td>MBBS</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>6 years</td>
+                    </tr>
+                    <tr>
+                        <td>Intake</td>
+                        <td>Sept-Oct</td>
+                    </tr>
+                    <tr>
+                        <td>Eligibility</td>
+                        <td>50% in 12th board exam</td>
+                    </tr>
+                    <tr>
+                        <td>NEET</td>
+                        <td>Mandatory</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>INR 4 Lakhs/annum</td>
+                    </tr>
+                    <tr>
+                        <td>Living Cost</td>
+                        <td>USD 350/month</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Country 4: Philippines -->
+            <div class="country">
+                <h3>Study MBBS in Philippines</h3>
+                <p>The Philippines is known for its affordable MBBS programs and a strong medical curriculum that is
+                    recognized internationally. The medium of instruction is English, and the duration of the program is
+                    5 years, followed by a 1-year internship. The cost of living is affordable, and the admission
+                    process is straightforward.</p>
+                <table>
+                    <tr>
+                        <td>Program</td>
+                        <td>MBBS</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>5+1 years</td>
+                    </tr>
+                    <tr>
+                        <td>Intake</td>
+                        <td>May-June</td>
+                    </tr>
+                    <tr>
+                        <td>Eligibility</td>
+                        <td>50% in 12th board exam</td>
+                    </tr>
+                    <tr>
+                        <td>NEET</td>
+                        <td>Mandatory</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>INR 3.5 Lakhs/annum</td>
+                    </tr>
+                    <tr>
+                        <td>Living Cost</td>
+                        <td>USD 300/month</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Country 5: Georgia -->
+            <div class="country">
+                <h3>Study MBBS in Georgia</h3>
+                <p>Georgia is quickly becoming a top choice for Indian students who wish to study MBBS abroad due to its
+                    high-quality education, low tuition fees, and globally recognized universities. The MBBS program is
+                    taught in English, and the course lasts 6 years, including a 1-year internship.</p>
+                <table>
+                    <tr>
+                        <td>Program</td>
+                        <td>MBBS</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>6 years</td>
+                    </tr>
+                    <tr>
+                        <td>Intake</td>
+                        <td>Sept-Oct</td>
+                    </tr>
+                    <tr>
+                        <td>Eligibility</td>
+                        <td>50% in 12th board exam</td>
+                    </tr>
+                    <tr>
+                        <td>NEET</td>
+                        <td>Mandatory</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>INR 3 Lakhs/annum</td>
+                    </tr>
+                    <tr>
+                        <td>Living Cost</td>
+                        <td>USD 350/month</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>Countries Overview</h2>
+            <table id="countryTable">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Population</th>
+                        <th>Capital</th>
+                        <th>Official Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be inserted by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@medglobal.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#" class="social-icon">FB</a></li>
+                    <li><a href="#" class="social-icon">TW</a></li>
+                    <li><a href="#" class="social-icon">IG</a></li>
+                    <li><a href="#" class="social-icon">LN</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MedGlobal. All rights reserved.</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- Scripts for Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap and Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="js/countries.js"></script>
+</body>
+
+</html>
