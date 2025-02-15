@@ -19,3 +19,15 @@ window.addEventListener('scroll', () => {
     lastScrollY = currentScrollY;
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.querySelector('#navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+    toggler.addEventListener('click', function () {
+        // Toggle the navbar visibility
+        navbarCollapse.classList.toggle('show');
+        // Toggle the active class for animation
+        toggler.classList.toggle('active');
+    });
+});
+
